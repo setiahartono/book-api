@@ -11,11 +11,21 @@ This repository included both the API and the unit test.
 
 ## How to run
 
+### Running Go directly
+
 - Make sure that Go is properly installed `go version`
 
 - Install dependencies `go mod tidy` and `go mod download`
 
 - Run the server by accessing the root directory and type `go run .`
+
+#### Running with Docker
+
+- Make sure that you have Docker installed `docker -v`
+
+- Build the Docker Image, type `docker build . && docker-compose build --no-cache`
+
+- Run the container, type `docker-compose up`
 
 ## The Unit Test
 

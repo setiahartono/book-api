@@ -1,0 +1,11 @@
+version: '1.18'
+
+services:
+  web:
+    build: .
+    image: book-api
+    command: go run main.go
+    volumes:
+      - .:/code
+    ports:
+      - "8080:8080"
